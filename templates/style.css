@@ -1,0 +1,27 @@
+#main {margin-left: 150px;
+    height:100% ;
+    width: 1200px
+}
+#header{ height: 20px;
+    width: 900px;
+}
+#right_view{border:1px red solid;
+   min-height:300px; 
+   width:395px;float: right
+}
+#left_view{
+   min-height:500px; 
+   width:200px;float: left;
+}
+#content_view{
+   min-height:500px; 
+   width:800px;
+   float:left
+}
+#menu{
+ height: 250px;
+ width:250px;
+ list-style-type: none;
+ margin:5px 5px 5px 5px;
+ float:left;
+}
