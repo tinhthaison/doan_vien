@@ -8,6 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <script src="<?php echo base_url()?>jquery/jquery-3.2.1.min.js"></script>
     <script src="<?php echo base_url()?>jquery/jquery-ui.js"></script>
     <link rel="stylesheet" href="<?php echo base_url()?>/bootstrap/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="<?php echo base_url()?>bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function()
@@ -28,31 +29,48 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </script>
 
 </head>
-<title>Từ điển tiếng Cao Lan</title></head><div id="container-fluid"><body>
+<title>Go!DV</title></head>
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="<?php echo base_url()?>">Từ điển tiếng Cao Lan</a>
+                <a class="navbar-brand" href=#><img class="img-responsive" src="<?php echo base_url()?>image/logo.png" width="100" height="60"/> </a>
             </div>
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav navbar-right">
                 <li class="active"><a href="<?php echo base_url()?>">Home</a></li>
-                <li><a href="<?php echo base_url().'welcome/thong_tin'?>">Thông tin</a></li>
-                <li><a href="<?php echo base_url()?>welcome/lien_he">Lời cảm ơn</a></li>
+                <li><a href="<?php echo base_url().'welcome/translate'?>">Tìm việc làm</a></li>
+                <li><a href="<?php echo base_url().'welcome/thong_tin'?>"><button class="btn btn-primary btn-circle"><span class="glyphicon glyphicon-bell"></span></button>  </a></li>
+                <li><a href="<?php echo base_url()?>welcome/lien_he"><button class="btn btn-warning btn-circle"> <span class="glyphicon glyphicon-user"></span> </button></a></li>
             </ul>
         </div>
     </nav>
-    <div class=”row”>
-    <p><div class="col-md-2"><?php  //echo "<table class='table table-striped'><tr><td class='success'> CSDL MYSQL:".$this->db->version()."</td></tr></table>";?></div></p></div>
-    <div class="col-md-4 col-md-offset-2 col-xs-12 col-sm-12">
-<form  form action="<?php echo base_url().'welcome/dich';?>" method="get"><select name="lua_chon" id="lua_chon1"><?php $stick=array('Việt-Cao lan','Cao lan-Việt');for($i=0;$i<=1;$i++){
-    echo "<option value='$i'";
-    if(isset($lua_chon)&&$lua_chon==$i){echo "selected='selecteđ'";}  echo ">".$stick[$i]."</option>";
-        }?></select>&nbsp
-    <input type="search"  name="search" id="key" value="<?php if(isset($tu_da_nhap)){echo $tu_da_nhap;}?>"><button type="submit" class="btn-success" name="ok" value="Dịch">Dịch</button></form>
-<?php if(isset($tu_da_nhap)){if(isset($tu)){
-foreach($tu as $tu){echo "<p style='color:red; font-size:20px'>".$tu['dich'].':&nbsp'.$tu['y_nghia'].'</p><br/>'. $tu['Vidu'];}
-}else{echo "Từ này không có trong từ điển, xin lỗi bạn";}}
-?></div>
-</div>
+
+
+    <div class=”row” >
+        <div class="col-md-2 container-fluid">
+            <p class="text-info text-right">  Xin chào bí thư chi đoàn thôn ***!</p>
+        <nav class="navbar navbar-default">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav nav-pills nav-stacked" style="background-color: white;height: 100%">
+                    <li class="active"><a href="#">Thông tin chung<span class="glyphicon glyphicon-exclamation-sign"></span></a></li>
+                    <li><a href="#">Thống kê <span class="glyphicon glyphicon-record"></span> </a></li>
+                    <li><a href="#">Biểu đồ<span class="glyphicon glyphicon-signal"></span> </a></li>
+                    <li><a href="#">Danh hiệu<span class="glyphicon glyphicon-star"></span> </a></li>
+                    <li><a href="#">Văn bản<span class="glyphicon glyphicon-list-alt"></span> </a></li>
+                    <li><a href="#">Kế hoạch<span class="glyphicon glyphicon-flag"></span> </a></li>
+                    <li><a href="#">Cài đặt <span class="glyphicon glyphicon-wrench"></span></a></li>
+                </ul>
+                </div>
+        </nav>
+        </div></div>
+    <div class="row"> <div class="col-md-4"><h5><a href=""> <img src="" class="btn-circle">Bootstrap</a> <small>Đoàn viên-Time</small></h5><p>Finally exploring our own SVG icon library for v5! If all goes well, we'll be using these for our own components and open sourcing them alongside our next major update :D
+        </p> </div> <div class="col-md-8"></div></div>
+    <div class="row"><div class="col-md-4"><img src="" class="btn-circle"><p class="text-primary">Bootstrap2</p><p>Finally exploring our own SVG icon library for v5! If all goes well, we'll be using these for our own components and open sourcing them alongside our next major update :D
+            </p> </div><div class="col-md-8"></div></div>
 </body>
+
 </html>

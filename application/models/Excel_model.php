@@ -11,10 +11,16 @@ class Excel_model extends CI_Model{
     { parent::__construct();
         $this->load->helper('url');
         $this->load->database();}
-    public function Add_data_danh_sach($data,$id){// them danh sach
-        $query=$this->db->query("SELECT maso_hocsinh FROM danh_sach WHERE class_id=$id");
-        if($query->num_rows()>0){$this->db->update_batch('danh_sach',$data,'maso_hocsinh');}else
-$this->db->Insert_batch('danh_sach',$data);
+public function Get_data_cu_tri(){
+    $this->db->select("*");
+    $this->db->from("danh_sach_bo_phieu");
+    $query=$this->db->get();
+    if($query->num_rows()>0){ $result=$query->result_array();}return $result;
+}
+    public function Add_data_danh_sach($data,$table_name){// them danh sach doan vien
+        $query=$this->db->get($table_name);
+        if($query->num_rows()>0){$this->db->update_batch($table_name,$data,$table_name);}else
+$this->db->Insert_batch($table_name,$data);
     }
     public function Show_class(){//lay ten lop
         $query=$this->db->query("SELECT class_id, class_name FROM class");
@@ -24,15 +30,11 @@ $this->db->Insert_batch('danh_sach',$data);
 
             $this->db->Insert_batch('bang_diem',$data);
     }
-    public function Mon_hoc($data){ // them mon hoc
-        $query=$this->db->query("SELECT monhoc_id FROM mon_hoc");
-        if($query->num_rows()>0){return FALSE;}else{
-        $query=$this->db->Insert_batch('mon_hoc',$data);}
-    }
-    public function Class_name($data){ //them lop hoc
-        $query=$this->db->query("SELECT class_id FROM class");
-        if($query->num_rows()>0){$this->db->update_batch('class',$data,'class_id');}else{
-       $this->db->Insert_batch('class',$data);}
+
+    public function Thon_name($data){ //them thon
+        $query=$this->db->query("SELECT thon_id FROM thon");
+        if($query->num_rows()>0){$this->db->update_batch('thon',$data,'thon_id');}else{
+       $this->db->Insert_batch('thon',$data);}
     }
     public function Delete_bang_diem($id){// xoa bang diem
     $this->db->delete('bang_diem',array('class_id'=>$id));
