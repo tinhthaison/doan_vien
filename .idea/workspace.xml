@@ -112,9 +112,9 @@
         <option value="$PROJECT_DIR$/../../php/xdebug.php" />
         <option value="$PROJECT_DIR$/../../php/php.ini" />
         <option value="$PROJECT_DIR$/application/config/config.php" />
-        <option value="D:/wamp/bin/php/php5.6.18/phpForApache.ini" />
+        <option value="$PROJECT_DIR$/../../bin/php/php5.6.18/phpForApache.ini" />
         <option value="$PROJECT_DIR$/application/config/autoload.php" />
-        <option value="D:/wamp/www/testlichsu/application/controllers/Welcome.php" />
+        <option value="$PROJECT_DIR$/../testlichsu/application/controllers/Welcome.php" />
         <option value="$PROJECT_DIR$/system/libraries/Upload.php" />
         <option value="$PROJECT_DIR$/application/controllers/Add_word.php" />
         <option value="$PROJECT_DIR$/../../phpmyadmin/user_password.php" />
@@ -154,6 +154,7 @@
     <option name="width" value="1377" />
     <option name="height" value="724" />
   </component>
+  <component name="ProjectId" id="1tZzaspsTWHPKqsrZE73EiCzHLS" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
       <profile-state>
@@ -242,91 +243,53 @@
     </option>
   </component>
   <component name="RunManager" selected="PHP Script.Excel.php">
-    <configuration default="false" name="Excel.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/testlichsu/application/controllers/Excel.php">
-      <method />
+    <configuration name="Add_word.php" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/testlichsu/application/controllers/Add_word.php">
+      <method v="2" />
     </configuration>
-    <configuration default="false" name="Excel.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/application/controllers/Excel.php">
-      <method />
+    <configuration name="Excel.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/testlichsu/application/controllers/Excel.php">
+      <method v="2" />
     </configuration>
-    <configuration default="false" name="Add_word.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/testlichsu/application/controllers/Add_word.php">
-      <method />
+    <configuration name="Upload_view.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/testlichsu/application/views/admin/Upload_view.php">
+      <method v="2" />
     </configuration>
-    <configuration default="false" name="Add_word.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/application/controllers/Add_word.php">
-      <method>
+    <configuration name="test.php" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:49672/testlichsu/application/models/test.php">
+      <method v="2" />
+    </configuration>
+    <configuration name="Add_word.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/application/controllers/Add_word.php">
+      <method v="2">
         <option name="RunConfigurationTask" enabled="true" run_configuration_name="Add_word.php" run_configuration_type="JavascriptDebugType" />
       </method>
     </configuration>
-    <configuration default="false" name="Upload_view.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/testlichsu/application/views/admin/Upload_view.php">
-      <method />
+    <configuration name="Excel.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/application/controllers/Excel.php">
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
-      <node-interpreter value="project" />
-      <working-dir value="" />
-      <envs />
-      <scope-kind value="ALL" />
-      <method />
+    <configuration name="test" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="test" start_url="/testlichsu">
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-      <method />
-    </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
-      <PhpTestRunnerSettings />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application">
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+    <configuration default="true" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
       <arguments />
       <envs />
-      <method />
+      <method v="2" />
     </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
-      <scripts />
-      <node-interpreter value="project" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="test.php" type="JavascriptDebugType" factoryName="JavaScript Debug" nameIsGenerated="true" uri="http://localhost:49672/testlichsu/application/models/test.php">
-      <method />
-    </configuration>
-    <configuration default="false" name="test" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="test" start_url="/testlichsu">
-      <method />
-    </configuration>
-    <list size="7">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.test.php" />
-      <item index="1" class="java.lang.String" itemvalue="PHP Web Application.test" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.Excel.php" />
-      <item index="3" class="java.lang.String" itemvalue="PHP Script.Excel.php" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.Add_word.php" />
-      <item index="5" class="java.lang.String" itemvalue="PHP Script.Add_word.php" />
-      <item index="6" class="java.lang.String" itemvalue="JavaScript Debug.Upload_view.php" />
+    <list>
+      <item itemvalue="JavaScript Debug.test.php" />
+      <item itemvalue="JavaScript Debug.Excel.php" />
+      <item itemvalue="JavaScript Debug.Add_word.php" />
+      <item itemvalue="JavaScript Debug.Upload_view.php" />
+      <item itemvalue="PHP Script.Excel.php" />
+      <item itemvalue="PHP Script.Add_word.php" />
+      <item itemvalue="PHP Web Page.test" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="PHP Script.Excel.php" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.Excel.php" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.Upload_view.php" />
-        <item index="3" class="java.lang.String" itemvalue="PHP Script.Add_word.php" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.Add_word.php" />
+      <list>
+        <item itemvalue="PHP Script.Excel.php" />
+        <item itemvalue="JavaScript Debug.Excel.php" />
+        <item itemvalue="JavaScript Debug.Upload_view.php" />
+        <item itemvalue="PHP Script.Add_word.php" />
       </list>
     </recent_temporary>
   </component>
@@ -511,7 +474,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/wamp/bin/php/php5.6.18/php.ini">
+    <entry file="file://$PROJECT_DIR$/../../bin/php/php5.6.18/php.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="346" column="31" lean-forward="true" selection-start-line="346" selection-start-column="31" selection-end-line="346" selection-end-column="31" />
@@ -549,14 +512,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/wamp/bin/php/php5.6.18/phpForApache.ini">
+    <entry file="file://$PROJECT_DIR$/../../bin/php/php5.6.18/phpForApache.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="2007" column="29" lean-forward="false" selection-start-line="2007" selection-start-column="29" selection-end-line="2007" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/wamp/www/testlichsu/index.php">
+    <entry file="file://$PROJECT_DIR$/../testlichsu/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
@@ -573,7 +536,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/libraries/Fb.php" />
-    <entry file="file://D:/wamp/www/testlichsu/application/controllers/Welcome.php">
+    <entry file="file://$PROJECT_DIR$/../testlichsu/application/controllers/Welcome.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="30" column="3" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
