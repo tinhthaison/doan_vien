@@ -24,7 +24,6 @@ class Welcome extends CI_Controller
         parent::__construct();
         $this->load->helper('url');
         $this->load->model('Add_model');
-        $this->load->library('session');
     }
 
     /**
@@ -32,12 +31,50 @@ class Welcome extends CI_Controller
      */
     public function Index()
     {
-        if(!empty($this->session->userdata("user_admin"))){redirect (base_url ().'admin/index');}
-        else if(empty($this->session->userdata("user"))){redirect (base_url ().'admin/login');}else
+
         $this->load->view('index_view');
 
     }
 
+    public function dich()
+    {
+        if ($this->input->get('ok')) {
+            $data = $this->input->get("search");
+            if(empty($data)){$data2['tu_da_nhap']="hãy nhập từ cần tra";$this->load->view('index_view',$data2);}else{
+                if($this->input->get('lua_chon')=='0'){
+            $data2['tu'] = $this->Add_model->Search_caolan($data);}
+            else{$data2['tu'] = $this->Add_model->Search_viet($data);}
+            $data2['tu_da_nhap']=$data;
+            $data2['lua_chon']=$this->input->get('lua_chon');
+            $this->load->view('index_view', $data2); }
+
+        }
+    }
+    public function json_vi()
+    {
+        if (isset($_GET['term'])) {
+            $data = $_GET['term'];//lay gia tri tu bien term(cai minh danh vao)
+            $data2=$this->Add_model->json_model_vi($data);//lay gia tri
+            echo json_encode($data2);
+            }
+        }
+    public function json_ca()
+    {
+        if (isset($_GET['term'])) {$data = $_GET['term'];//lay gia tri tu bien term(cai minh danh vao)
+           //lay gia tri
+            $data2=$this->Add_model->json_model_ca($data);
+            echo json_encode($data2);}
+    }
+    public function thong_tin()
+    {
+        $this->load->view('thong_tin_view');
+
+        }
+    public function lien_he()
+    {
+        $this->load->view('lien_he_view');
+
+    }
 
     }
 

@@ -1,0 +1,1 @@
+<div id="right_view"><img src="image/gioithieu.jpg" width="395" height="509" /></div>

@@ -18,13 +18,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 } //link xử lý dữ liệu tìm kiếm
             );
             $("#lua_chon1").change(function(){
-                 if($("#lua_chon1").val()==0){$a="json_vi";}else {$a="json_ca";}
+                if($("#lua_chon1").val()==0){$a="json_vi";}else {$a="json_ca";}
                 $("#key").autocomplete({
                         source: "<?php echo base_url()?>welcome/"+$a
                     } //link xử lý dữ liệu tìm kiếm
                 );//ket thuc lay dl
             });
-            })
+        })
     </script>
 
 </head>
@@ -35,24 +35,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <a class="navbar-brand" href="<?php echo base_url()?>">Từ điển tiếng Cao Lan</a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="<?php echo base_url()?>">Home</a></li>
-                <li><a href="<?php echo base_url().'welcome/thong_tin'?>">Thông tin</a></li>
+                <li><a href="<?php echo base_url()?>">Home</a></li>
+                <li class="active"><a href="">Thông tin</a></li>
                 <li><a href="<?php echo base_url()?>welcome/lien_he">Lời cảm ơn</a></li>
             </ul>
         </div>
     </nav>
-    <div class=”row”>
-    <p><div class="col-md-2"><?php  //echo "<table class='table table-striped'><tr><td class='success'> CSDL MYSQL:".$this->db->version()."</td></tr></table>";?></div></p></div>
-    <div class="col-md-4 col-md-offset-2 col-xs-12 col-sm-12">
-<form  form action="<?php echo base_url().'welcome/dich';?>" method="get"><select name="lua_chon" id="lua_chon1"><?php $stick=array('Việt-Cao lan','Cao lan-Việt');for($i=0;$i<=1;$i++){
-    echo "<option value='$i'";
-    if(isset($lua_chon)&&$lua_chon==$i){echo "selected='selecteđ'";}  echo ">".$stick[$i]."</option>";
-        }?></select>&nbsp
-    <input type="search"  name="search" id="key" value="<?php if(isset($tu_da_nhap)){echo $tu_da_nhap;}?>"><button type="submit" class="btn-success" name="ok" value="Dịch">Dịch</button></form>
-<?php if(isset($tu_da_nhap)){if(isset($tu)){
-foreach($tu as $tu){echo "<p style='color:red; font-size:20px'>".$tu['dich'].':&nbsp'.$tu['y_nghia'].'</p><br/>'. $tu['Vidu'];}
-}else{echo "Từ này không có trong từ điển, xin lỗi bạn";}}
-?></div>
-</div>
-</body>
+    <div class="row"><div class="col-md-6 col-md-offset-2"><div class="bg-primary text-white"><h5>Xin chân thành gửi lời cảm ơn đến:<ul><li>Trần Thị Kim Anh Lớp 9B THCS Phú Lương khóa 2014-2018</li><li>Nịnh Ngọc Bích Lớp 9B THCS Phú Lương khóa 2014-2018</li><li>Cùng tập thể lớp 9B THCS Phú Lương khóa 2014-2018 cũng như rất nhiều các cá nhân khác đã giúp đỡ, hỗ trợ hoàn thành dự án này</li></ul></h5></div>
+            <div class="bg-warning text-white">Số lượng từ hiện tại còn chưa được nhiều và có thể có nhiều sai sót, các bạn có thể tiếp tục giúp đỡ nhóm bằng cách gửi cho nhóm thêm các từ mới hoặc các từ cần sửa với nội dung như sau:1.Từ tiếng Việt; 2.Nghĩa khi dịch sang từ Cao Lan, 3. Câu ví dụ với từ đấy ( không bắt buộc) - viết bằng tiếng Cao Lan và có dịch sang tiếng Việt. Sau đó các bạn gửi file đính kèm vào địa chỉ tudiencaolan@gmail.com và chúng tôi sẽ cập nhật dữ liệu cho từ điển</div>
+        </div></div>
+    </body>
 </html>

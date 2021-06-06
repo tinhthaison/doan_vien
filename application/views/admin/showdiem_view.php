@@ -23,25 +23,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </nav>
     <div class=”row”>
-        <div class="col-md-12">  <h5 style="color: blue"> <?php /*function rank($rank,$diem){
+        <div class="col-md-12">  <h5 style="color: blue"> <?php function rank($rank,$diem){
             foreach ($rank as $rank){
-                if(isset($rank) AND $rank['maso_hocsinh']==$diem[0]['maso_hocsinh']){
-                 $val=$rank['rank'];}return $val;
+                if($rank['maso_hocsinh']==$diem[0]['maso_hocsinh']){
+                 $val=$rank['rank']; return $val;}
             }}
             echo "Điểm 1 tiết xếp hạng&nbsp".rank($rank_1_tiet,$diem).";&nbsp";
            echo "Điểm thi xếp hạng&nbsp".rank($rank_thi,$diem).";&nbsp";
             echo "Điểm TB cả năm xếp hạng&nbsp".rank($rank_diem_phay,$diem).";&nbsp";
-                */?></h5>
+                ?></h5>
         <p style="color: red">Bảng điểm mang tính chất tham khảo</p></div>
         <p><div class="col-md-12"><table class='table table-bordered'><tr><th class='success'>Môn học</th><th class='success'>Điểm miệng</th>
         <th class='success'>Điểm 15 phút</th><th class='success'>Điểm 1 tiết</th><th class='success'>Điểm thi</th><th class='success'>Điểm TB</th><th class='success'>Cả năm</th></tr>
         <?php $mang=array('diem_mieng','diem_15','diem_1_tiet','diem_thi','diem_phay','tbm_canam');
         //diem mon su
-       /* for($i=0;$i<=$count-1;$i++){if($diem[$i]['monhoc_id']==1){ echo "<tr><td class='warning'>".$diem[$i]['ten_monhoc']."</td>";
-            for($j=0;$j<=5;$j++){echo "<td class='warning'>".str_replace(".",",","{$diem[$i][$mang[$j]]}")."</td>";}}*/
+        for($i=0;$i<=$count-1;$i++){if($diem[$i]['ten_monhoc']=='Lịch sử'){ echo "<tr><td class='warning'>".$diem[$i]['ten_monhoc']."</td>";
+            for($j=0;$j<=5;$j++){echo "<td class='warning'>".str_replace(".",",","{$diem[$i][$mang[$j]]}")."</td>";}}
             //diem tat ca cac mon
-        for($i=0;$i<=$count-1;$i++){echo "<tr><td class='warning'>".$diem[$i]['ten_monhoc']."</td>";//diem tat ca cac mon
-       for($j=0;$j<=4;$j++){echo "<td class='warning'>".str_replace(".",",","{$diem[$i][$mang[$j]]}")."</td>";}
+        //for($i=0;$i<=$count-1;$i++){echo "<tr><td class='warning'>".$diem[$i]['ten_monhoc']."</td>";//diem tat ca cac mon
+      // for($j=0;$j<=4;$j++){echo "<td class='warning'>".str_replace(".",",","{$diem[$i][$mang[$j]]}")."</td>";}
      }?>
         </table></div>
         <div class="col-md-6"> <canvas id="chartJSContainer" width="100" height="50"></canvas></div>
@@ -78,23 +78,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             new Chart(ctx, options);
         </script></p></div>
 
-</div>
-<!-- Load Facebook SDK for JavaScript -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
-<!-- Your customer chat code -->
-<div class="fb-customerchat"
-     attribution=setup_tool
-     page_id="341082709293386"
-     logged_in_greeting="Xin chào! Tôi có thể giúp gì?"
-     logged_out_greeting="Xin chào! Tôi có thể giúp gì?">
 </div>
 </body>
 </html>
